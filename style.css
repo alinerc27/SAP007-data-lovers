@@ -21,6 +21,7 @@ TextoFooter LINKS 12px LH 17px fw 300
 */
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/*@import url('https://css.gg/pokemon.css');*/
 
 body {
     font-family: "Lato", sans-serif;
@@ -37,11 +38,27 @@ header {
     background: #74596E;
 }
 
-#logo {
+#logo, #iconPokemon {
     height: 80%;
-    margin-left: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
+#logo {
+    float:left; 
+    margin: left;
+    margin-left: 1vw;
+}
+
+#iconPokemon {
+    float:right; 
+    margin: right 1vw; 
+}
+/*
+#iconPokemon:hover  {
+   fill: #F5C844;
+}
+*/
 .titulo1 {
 font-size: 28px;
 line-height: 34px;
@@ -68,7 +85,8 @@ border-radius: 20px;
 border: 12px solid #3B5A8C;
 /*height: 70vh;*/
 /*padding-left: 0.5vh;*/
-margin-left: 2vw;
+margin-left: auto;
+margin-right: auto;
 }
 
 .titulo1card {
