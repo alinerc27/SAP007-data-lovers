@@ -38,23 +38,27 @@ header {
     background: #74596E;
 }
 
-#logo {
+#logo, #iconPokemon {
     height: 80%;
     margin-top: 1vh;
     margin-bottom: 1vh;
+}
+
+#logo {
     float:left; 
     margin: left;
     margin-left: 1vw;
 }
 
 #iconPokemon {
-    height: 80%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
     float:right; 
     margin: right 1vw; 
 }
-
+/*
+#iconPokemon:hover  {
+   fill: #F5C844;
+}
+*/
 .titulo1 {
 font-size: 28px;
 line-height: 34px;
