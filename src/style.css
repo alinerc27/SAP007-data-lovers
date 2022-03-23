@@ -137,7 +137,7 @@ Formatos - Textos
 .card {
     margin-top: 4vh;
     background: #A7CAED;
-/*filter: blur(4px);*/
+    /*filter: blur(4px);*/
     width: 285px;
     height: 420px;
     border-radius: 20px;
