@@ -23,9 +23,22 @@ TextoFooter LINKS 12px LH 17px fw 300
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 /*@import url('https://css.gg/pokemon.css');*/
 
+:root {
+--color-blue: #A7CAED;
+--color-blue-dark: #3B5A8C;
+--color-purple: #74596E;
+--color-red: #CC2B27;
+--color-yellow: #F5C844;
+--color-offwhite: #EAEBF2;
+}
+
 body {
     font-family: "Lato", sans-serif;
-    background: #EAEBF2;
+    background: var(--color-offwhite);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 br {
@@ -35,7 +48,7 @@ br {
 header {
     width: 100%;
     height: 80px;
-    background: #74596E;
+    background: var(--color-purple);
 }
 
 #logo, #iconPokemon {
@@ -103,27 +116,7 @@ Formatos - Textos
     line-height: 17px;
 }
 
-.buscar {
-    margin-top: 2vh;
-    margin: left;
-    margin-left: 1%;
-    padding: 4px 2px 2px;
-    width: 130px;
-    height: 35px;
-    border-radius: 5px;
-    border: 2px solid #000;
-}
-.ordenar {
-    margin-top: 2vh;
-    margin: left;
-    margin-left: 1%;
-    padding: 4px 2px 2px;
-    width: 130px;
-    height: 35px;
-    border-radius: 5px;
-    border: 2px solid #000;
-}
-.calcular {
+.buscar, .ordenar, .calcular {
     margin-top: 2vh;
     margin: left;
     margin-left: 1%;
@@ -141,7 +134,7 @@ Formatos - Textos
     width: 285px;
     height: 420px;
     border-radius: 20px;
-    border: 12px solid #3B5A8C;
+    border: 12px solid var(--color-blue-dark);
 /*height: 70vh;*/
 /*padding-left: 0.5vh;*/
     margin-left: auto;
@@ -162,8 +155,8 @@ Formatos - Textos
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #F5C844;
-    text-shadow:#74596E 1px -1px, #74596E -1px 1px, #74596E 1px 1px, #74596E -1px -1px;
+    color: var(--color-yellow);
+    text-shadow: var(--color-purple) 1px -1px, var(--color-purple) -1px 1px, var(--color-purple) 1px 1px, var(--color-purple) -1px -1px;
     line-height: 30px;
     width: 94%;
     background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
@@ -173,18 +166,18 @@ footer {
     width: 100%;
     height: 75px;
     margin-top: 8%;
-    background: #EAEBF2;
+    background: var(--color-offwhite);
 }
 
 .linhaFooter {
     border-radius: 8px;
     width: 98%;
     height: 2px;
-    background-color:#CC2B27;
+    background-color: var(--color-red);
     margin-left: auto;
     margin-right: auto;
 }
 
 .copyFooter, .readmeFooter {
-    color:#CC2B27;
+    color: var(--color-red);
 } 
