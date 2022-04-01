@@ -18,63 +18,43 @@ Titulo4 20px line height 28px fw 700
 EstiloBotãoComum 15px LH 21px fw 700
 TextoComum 15px LH 21px fw 300
 TextoFooter LINKS 12px LH 17px fw 300
-*/
+
 @import url("./reset.css");
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 /*@import url('https://css.gg/pokemon.css');*/
 
 :root {
---color-blue: #A7CAED;
---color-blue-dark: #3B5A8C;
---color-purple: #74596E;
---color-red: #CC2B27;
---color-yellow: #F5C844;
---color-offwhite: #EAEBF2;
+    --color-blue: #A7CAED;
+    --color-blue-dark: #3B5A8C;
+    --color-purple: #74596E;
+    --color-red: #CC2B27;
+    --color-yellow: #F5C844;
+    --color-offwhite: #EAEBF2;
+    --color-black:#000;
 }
 
 body {
-    font-family: "Lato", sans-serif;
-    background: var(--color-offwhite);
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
     width: 100%;
     height: 100%;
+    font-family: "Lato", sans-serif;
+    background: var(--color-offwhite);
+   /* display:flex;*/
+}
+
+img {
+    max-width: 100%;
 }
 
 br {
     line-height: 5px;
 }
 
-header {
-    width: 100%;
-    height: 80px;
-    background: var(--color-purple);
-}
-
-#logo, #iconPokemon {
-    height: 80%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-}
-
-#logo {
-    float:left; 
-    margin: left;
-    margin-left: 1vw;
-}
-
-#iconPokemon {
-    float:right; 
-    margin: right 1vw; 
-}
-/*
-#iconPokemon:hover  {
-   fill: #F5C844;
-}
-*/
-/*
-Formatos - Textos
-*/
 .titulo1, .titulo2 {
     font-weight: 900;
 }
@@ -107,29 +87,94 @@ Formatos - Textos
     line-height: 21px;
 }
 
+.estiloBotaoComum{
+    text-align: center;
+}
+
 .textoComum, .textoFooter {
     font-weight: 300;
 }
 
 .textoFooter {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 17px;
 }
 
-.buscar, .ordenar, .calcular {
+header {
+    width: 100%;
+    height: 80px;
+    background: var(--color-purple);
+}
+
+#logo, #iconPokemon {
+    height: 80%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#logo {
+    float:left; 
+    margin: left;
+    margin-left: 1vw;
+    background-image: url(/img/logo.svg); 
+}
+
+/*
+
+background-image: url(/images/image.svg); 
+
+a#iconPokemon:hover, aiconPokemon:active {
+    background-color: #F5C844;
+}
+
+svg:hover {
+    fill: red;
+  }
+*/
+
+#iconPokemon {
+    float:right; 
+    margin: right 1vw; 
+}
+
+.linhaHeader {
+    position: absolute;
+    border-radius: 8px;
+    width: 98%;
+    top:80px;
+    height: 2px;
+    background-color: var(--color-black);
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.buscar {
+    margin-top: 2vh;
+    margin: left;
+    margin-left: 1%;
+    padding: 4px 2px 2px;
+    width: 124px;
+    height: 25px; 
+    border-radius: 5px;
+    border: 2px solid var(--color-black);
+    background: var(--color-offwhite);
+} 
+
+.ordenar, .calcular, .submit {
     margin-top: 2vh;
     margin: left;
     margin-left: 1%;
     padding: 4px 2px 2px;
     width: 130px;
-    height: 35px;
+    height: 35px; 
     border-radius: 5px;
-    border: 2px solid #000;
+    border: 2px solid var(--color-black);
+    background: var(--color-offwhite);
 }
 
 .card {
     margin-top: 4vh;
-    background: #A7CAED;
+    background: var(--color-blue);
     /*filter: blur(4px);*/
     width: 285px;
     height: 420px;
@@ -145,7 +190,7 @@ Formatos - Textos
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    color: #000;
+    color: var(--color-black);
     line-height: 60px;
     width: 94%;
     background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
@@ -163,10 +208,14 @@ Formatos - Textos
 }
 
 footer {
+    /*display:flex;*/
     width: 100%;
     height: 75px;
     margin-top: 8%;
     background: var(--color-offwhite);
+    /*justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;*/
 }
 
 .linhaFooter {
@@ -176,8 +225,40 @@ footer {
     background-color: var(--color-red);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2vh;
 }
 
 .copyFooter, .readmeFooter {
     color: var(--color-red);
+    
 } 
+
+.copyFooter {
+    position: absolute;
+    margin-right: 20%;
+}
+
+.readmeFooter {
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 40%;
+}
+
+/*.iconFooter {
+    position: absolute;
+    margin-left: 90%;
+}*/
+
+#iconGithubLink{
+    position: absolute;
+    margin-left: 80%;  
+}
+
+#iconLinkedin{
+    position: absolute;
+    margin-left: 90%;
+}
+
+.iconFooter, .readmeFooter, .copyFooter {
+    margin-bottom: 0%;
+}

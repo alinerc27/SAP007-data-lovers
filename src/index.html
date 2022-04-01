@@ -8,55 +8,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <!--aqui vai ficar o logo e o IconeBotãoBola-->
-      <img id="logo" src="img/logo.svg" alt="Logotipo">
-      <a href="#" id="iconPokemonLink"><img id="iconPokemon" src="img/pokeball_icon.svg" alt="Icone Pokeball"></a>
+    <div id="root"></div>
+      <header>
+        <!--aqui vai ficar o logo e o IconeBotãoBola-->
+        <img id="logo" src="img/logo.svg" alt="Logotipo">
+        <a href="#" class="iconPokemonLink"><img id="iconPokemon" src="img/pokeball_icon.svg" alt="Icone Pokeball"></a>
         <!--<div class="gg-pokemon"></div>-->
-    </header>
-    <div id="root">
-     <!-- <h1 class="titulo1">Pokédex</h1> aqui vai virar o buscar, ordenar e calcular -->
+        <div class="linhaHeader"></div>
+      </header>
+        <!-- <h1 class="titulo1">Pokédex</h1> aqui vai virar o buscar, ordenar e calcular -->
       <main>
-        <div class="buscar">
-          <input type="text" placeholder="Buscar Pokemon">
-        </div>
-        <div class="ordenar">
-          <select class="ordenarCampo">
-            <option selected disabled>Ordenar</option>
-            <option>De A a Z</option>
-            <option>De Z a A</option>
-            <option>Tipo</option>
-            <option>Distancia do Ovo</option>
+        <form action="#">
+          <input class="buscar estiloBotaoComum" type="text" placeholder="Buscar Pokemon">
+          <select class="ordenar estiloBotaoComum">
+              <option selected disabled>Ordenar</option>
+              <option>De A a Z</option>
+              <option>De Z a A</option>
+              <option>Tipo</option>
+              <option>Distancia do Ovo</option>
           </select>
-        </div>        
-        <div class="calcular">
-          <select class="calcularCampo">
-            <option selected disabled>Calcular</option>
-            <option>Porcentagem por Tipo</option>
-            <option>Calcular Raridade</option>
+          <select class="calcular estiloBotaoComum">
+              <option selected disabled>Calcular</option>
+              <option>Porcentagem por Tipo</option>
+              <option>Calcular Raridade</option>
           </select>
-        </div>
+          <input type="submit" value="Submit" class="submit estiloBotaoComum">
+        </form>
         <div class="card">
           <img src="https://www.serebii.net/pokemongo/pokemon/001.png" alt="bulbasaur">
-          <h3 class="titulo1 titulo1card">Bulbasaur</h3></br>                      
           <div class="textCard">
-            <h3 class="titulo3 titulo3card">Pokemon-rarity </br>
-            Normal</h3></br>
-            <h3 class="titulo3 titulo3card">Distance egg </br>
-            2 km</h3>
+            <p class="titulo1 titulo1card">Bulbasaur</p>                     
+            <p class="titulo3 titulo3card">Pokemon-rarity <br> Normal </p>
+            <p class="titulo3 titulo3card">Distance egg <br> 2 km </p>
           </div>
         </div>
       </main>
+      <footer>
+        <div class="linhaFooter"></div>
+        <p class="copyFooter textoFooter">Copyright © 2022 | Aline Rosa Cruz</p>
+        <a href="https://github.com/alinerc27/SAP007-data-lovers/blob/main/README.md" id="readmeLinkedin">
+          <p class="readmeFooter textoFooter">README</p>
+        </a>
+        <a href="https://www.linkedin.com/in/aline-rosa-cruz" id="iconLinkedinLink" class="iconFooter"><img id="iconLinkedin" src="img/linkedin_r.svg" alt="Link linkedin"></a>
+        <a href="https://github.com/alinerc27" id="iconGithubLink" class="iconFooter"><img id="iconGithub" src="img/github_r.svg" alt="Link Github"></a>  
+      </footer>
+     <!--  <script src="data.js" type="module"></script> -->
     </div>
-    <footer>
-      <div class="linhaFooter"></div>
-      <p class="copyFooter textoFooter">Copyright © 2022 | Aline Rosa Cruz</p>
-      <a href="#" id="readmeLinkedin">
-        <p class="readmeFooter textoFooter">README</p>
-      </a>
-      <a href="#" id="iconLinkedinLink"><img id="iconLinkedin" src="img/linkedin_r.svg" alt="Link linkedin"></a>
-      <a href="#" id="iconGithubLink"><img id="iconGithub" src="img/github_r.svg" alt="Link Github"></a>  
-    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
