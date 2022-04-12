@@ -153,7 +153,7 @@ svg:hover {
     margin: left;
     margin-left: 1%;
     padding: 4px 2px 2px;
-    width: 124px;
+    width: 227px;
     height: 25px; 
     border-radius: 5px;
     border: 2px solid var(--color-black);
@@ -165,11 +165,15 @@ svg:hover {
     margin: left;
     margin-left: 1%;
     padding: 4px 2px 2px;
-    width: 130px;
+    width: 111px;
     height: 35px; 
     border-radius: 5px;
     border: 2px solid var(--color-black);
     background: var(--color-offwhite);
+}
+
+.calcular {
+     width: 115px;
 }
 
 .card {
@@ -207,11 +211,22 @@ svg:hover {
     background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
 }
 
+#grupoCard{
+    margin-top: 10vh;
+}
+.voltarTopo {
+    position: fixed;
+    bottom: 4.5rem;
+    right: 3.2rem;
+    border: none;
+  }
+
 footer {
-    /*display:flex;*/
+    position: fixed;
     width: 100%;
     height: 75px;
-    margin-top: 8%;
+    /*margin-top: 8%;*/
+    bottom: 0;
     background: var(--color-offwhite);
     /*justify-content: space-between;
     align-items: flex-end;
@@ -240,8 +255,8 @@ footer {
 
 .readmeFooter {
     position: absolute;
-    margin-left: 60%;
-    margin-right: 40%;
+    margin-left: 62%;
+    margin-right: 38%;
 }
 
 /*.iconFooter {
