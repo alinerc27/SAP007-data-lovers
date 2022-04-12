@@ -1,41 +1,83 @@
-/*palleta
-$blue: #A7CAED;
-$blue-dark: #3B5A8C;
-$purple: #74596E;
-$red: #CC2B27;
-$yellow: #F5C844;
-$offwhite: #EAEBF2;
-*/
-/*fontes
-Font Family: "Lato", sans-serif;
-line-height é o espaçamento entre uma linha e outra.
-font-weight é a espessura da linha, “nomal, negrito e assim por diante” 
-
-Titulo1 28px line height 34px fw 900
-Titulo2 24px line height 30px fw 900
-Titulo3 24px line height 30px fw 400
-Titulo4 20px line height 28px fw 700
-EstiloBotãoComum 15px LH 21px fw 700
-TextoComum 15px LH 21px fw 300
-TextoFooter LINKS 12px LH 17px fw 300
-*/
-@import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-/*@import url('https://css.gg/pokemon.css');*/
+
+:root {
+    --color-blue: #A7CAED;
+    --color-blue-dark: #3B5A8C;
+    --color-purple: #74596E;
+    --color-red: #CC2B27;
+    --color-yellow: #F5C844;
+    --color-offwhite: #EAEBF2;
+    --color-black:#000;
+}
 
 body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
     font-family: "Lato", sans-serif;
-    background: #EAEBF2;
+    background: var(--color-offwhite);
+}
+
+img {
+    max-width: 100%;
 }
 
 br {
     line-height: 5px;
 }
 
+.titulo1, .titulo2 {
+    font-weight: 900;
+}
+
+.titulo1 {
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.titulo2, .titulo3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.titulo3 {
+    font-weight: 400;
+}
+
+.titulo4, .estiloBotaoComum {
+    font-weight: 700;
+}
+
+.titulo4 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.estiloBotaoComum, .textoComum {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.estiloBotaoComum{
+    text-align: center;
+}
+
+.textoComum, .textoFooter {
+    font-weight: 300;
+}
+
+.textoFooter {
+    font-size: 13px;
+    line-height: 17px;
+}
+
 header {
     width: 100%;
     height: 80px;
-    background: #74596E;
+    background: var(--color-purple);
 }
 
 #logo, #iconPokemon {
@@ -48,64 +90,139 @@ header {
     float:left; 
     margin: left;
     margin-left: 1vw;
+    background-image: url(/img/logo.svg); 
 }
 
 #iconPokemon {
     float:right; 
     margin: right 1vw; 
 }
-/*
-#iconPokemon:hover  {
-   fill: #F5C844;
-}
-*/
-.titulo1 {
-font-size: 28px;
-line-height: 34px;
-font-weight: 900;
-}
-.titulo2 {
-font-size: 24px;
-line-height: 30px;
-font-weight: 900;
-}
-.titulo3 {
-font-size: 24px;
-line-height: 30px;
-font-weight: 400;
+
+.linhaHeader {
+    position: absolute;
+    border-radius: 8px;
+    width: 98%;
+    top:80px;
+    height: 2px;
+    background-color: var(--color-black);
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
+.buscar {
+    margin-top: 2vh;
+    margin: left;
+    margin-left: 1%;
+    padding: 4px 2px 2px;
+    width: 227px;
+    height: 25px; 
+    border-radius: 5px;
+    border: 2px solid var(--color-black);
+    background: var(--color-offwhite);
+} 
+
+.ordenar, .calcular, .submit {
+    margin-top: 2vh;
+    margin: left;
+    margin-left: 1%;
+    padding: 4px 2px 2px;
+    width: 111px;
+    height: 35px; 
+    border-radius: 5px;
+    border: 2px solid var(--color-black);
+    background: var(--color-offwhite);
+}
+
+.calcular {
+     width: 115px;
+}
 
 .card {
-background: #A7CAED;
-/*filter: blur(4px);*/
-width: 285px;
-height: 420px;
-border-radius: 20px;
-border: 12px solid #3B5A8C;
-/*height: 70vh;*/
-/*padding-left: 0.5vh;*/
-margin-left: auto;
-margin-right: auto;
+    margin-top: 4vh;
+    background: var(--color-blue);
+    width: 285px;
+    height: 420px;
+    border-radius: 20px;
+    border: 12px solid var(--color-blue-dark);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .titulo1card {
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-color: #000;
-line-height: 60px;
-width: 94%;
-background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--color-black);
+    line-height: 60px;
+    width: 94%;
+    background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
 }
 
 .titulo3card {
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-color: #F5C844;
-text-shadow:#74596E 1px -1px, #74596E -1px 1px, #74596E 1px 1px, #74596E -1px -1px;
-line-height: 30px;
-width: 94%;
-background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: var(--color-yellow);
+    text-shadow: var(--color-purple) 1px -1px, var(--color-purple) -1px 1px, var(--color-purple) 1px 1px, var(--color-purple) -1px -1px;
+    line-height: 30px;
+    width: 94%;
+    background: linear-gradient(90deg, rgba(234, 235, 242, 0) -10.87%, rgba(234, 235, 242, 0.7) 17.11%, rgba(234, 235, 242, 0.7) 50.35%, rgba(234, 235, 242, 0) 109.57%);
+}
+
+#grupoCard{
+    margin-top: 10vh;
+}
+.voltarTopo {
+    position: fixed;
+    bottom: 4.5rem;
+    right: 3.2rem;
+    border: none;
+  }
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    bottom: 0;
+    background: var(--color-offwhite);
+}
+
+.linhaFooter {
+    border-radius: 8px;
+    width: 98%;
+    height: 2px;
+    background-color: var(--color-red);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+}
+
+.copyFooter, .readmeFooter {
+    color: var(--color-red);
+    
+} 
+
+.copyFooter {
+    position: absolute;
+    margin-right: 20%;
+}
+
+.readmeFooter {
+    position: absolute;
+    margin-left: 62%;
+    margin-right: 38%;
+}
+
+#iconGithubLink{
+    position: absolute;
+    margin-left: 80%;  
+}
+
+#iconLinkedin{
+    position: absolute;
+    margin-left: 90%;
+}
+
+.iconFooter, .readmeFooter, .copyFooter {
+    margin-bottom: 0%;
 }

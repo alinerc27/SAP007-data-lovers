@@ -4,30 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Data Lovers - Pokedex</title>
-    <!--<link rel="stylesheet" href="reset.css">-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <!--aqui vai ficar o logo e o IconeBotãoBola-->
-      <img id="logo" src="img/logo.svg" alt="Logotipo">
-      <a href="#" id="iconPokemonLink"><img id="iconPokemon" src="img/pokeball_icon.svg" alt="Icone Pokeball"></a>
-        <!--<div class="gg-pokemon"></div>-->
-    </header>
-    <div id="root">
-     <!-- <h1 class="titulo1">Pokédex</h1> aqui vai virar o buscar, ordenar e calcular -->
+    <div id="root"></div>
+      <header>
+        <img id="logo" src="img/logo.svg" alt="Logotipo">
+        <a href="#" class="iconPokemonLink"><img id="iconPokemon" src="img/pokeball_icon.svg" alt="Icone Pokeball"></a>
+        <div class="linhaHeader"></div>
+      </header>
       <main>
-        <div class="card">
-          <img src="https://www.serebii.net/pokemongo/pokemon/001.png" alt="bulbasaur">
-          <h3 class="titulo1 titulo1card">Bulbasaur</h3></br>                      
-          <div class="textCard">
-            <h3 class="titulo3 titulo3card">Pokemon-rarity </br>
-            Normal</h3></br>
-            <h3 class="titulo3 titulo3card">Distance egg </br>
-            2 km</h3>
-          </div>
-        </div>
+        <form id="filtros">
+          <input class="grupoFiltros buscar estiloBotaoComum" type="text" placeholder="Pesquisar Pokemon por Nome" id="filtroBuscar">
+          <select class="grupoFiltros ordenar estiloBotaoComum" id="filtroOrdenar">
+              <option selected disabled>Ordenar</option>
+              <option value="AZ">De A a Z</option>
+              <option value="ZA">De Z a A</option>
+          </select>
+          <select class="grupoFiltros calcular estiloBotaoComum" id="filtroCalcular">
+              <option selected disabled>Calcular</option>
+              <option value="normal">Quantity per Normal Rarity</option>
+              <option value="legendary">Quantity per Legendary Rarity</option>
+              <option value="mythic">Quantity per Mythic Rarity</option>
+          </select>
+          <input type="submit" value="Limpar" class="submit estiloBotaoComum" id="limparFiltros">
+        </form>
+        <p class="resultadoCalculo" id="resultadoCalculo"></p>
+        <div id="grupoCard"></div>
       </main>
+      <a class="voltarTopo" id="voltarTopo">
+        <img src="img/seta.png" alt="Subir pagina" width="50" height="50" />
+      </a>
+      <footer>
+        <div class="linhaFooter"></div>
+        <p class="copyFooter textoFooter">Copyright © 2022 | Aline Rosa Cruz</p>
+        <a href="https://github.com/alinerc27/SAP007-data-lovers/blob/main/README.md" id="readmeLinkedin">
+          <p class="readmeFooter textoFooter">README</p>
+        </a>
+        <a href="https://www.linkedin.com/in/aline-rosa-cruz" id="iconLinkedinLink" class="iconFooter"><img id="iconLinkedin" src="img/linkedin_r.svg" alt="Link linkedin"></a>
+        <a href="https://github.com/alinerc27" id="iconGithubLink" class="iconFooter"><img id="iconGithub" src="img/github_r.svg" alt="Link Github"></a>  
+      </footer>
     </div>
     <script src="main.js" type="module"></script>
   </body>
