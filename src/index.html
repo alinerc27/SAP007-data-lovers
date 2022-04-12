@@ -4,19 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Data Lovers - Pokedex</title>
-    <!--<link rel="stylesheet" href="reset.css">-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root"></div>
       <header>
-        <!--aqui vai ficar o logo e o IconeBotãoBola-->
         <img id="logo" src="img/logo.svg" alt="Logotipo">
         <a href="#" class="iconPokemonLink"><img id="iconPokemon" src="img/pokeball_icon.svg" alt="Icone Pokeball"></a>
-        <!--<div class="gg-pokemon"></div>-->
         <div class="linhaHeader"></div>
       </header>
-        <!-- <h1 class="titulo1">Pokédex</h1> aqui vai virar o buscar, ordenar e calcular -->
       <main>
         <form id="filtros">
           <input class="grupoFiltros buscar estiloBotaoComum" type="text" placeholder="Pesquisar Pokemon por Nome" id="filtroBuscar">
@@ -24,8 +20,6 @@
               <option selected disabled>Ordenar</option>
               <option value="AZ">De A a Z</option>
               <option value="ZA">De Z a A</option>
-             <!-- <option>Tipo</option>-->
-             <!--<option value="OVO">Distancia do Ovo</option> -->
           </select>
           <select class="grupoFiltros calcular estiloBotaoComum" id="filtroCalcular">
               <option selected disabled>Calcular</option>
@@ -50,7 +44,6 @@
         <a href="https://www.linkedin.com/in/aline-rosa-cruz" id="iconLinkedinLink" class="iconFooter"><img id="iconLinkedin" src="img/linkedin_r.svg" alt="Link linkedin"></a>
         <a href="https://github.com/alinerc27" id="iconGithubLink" class="iconFooter"><img id="iconGithub" src="img/github_r.svg" alt="Link Github"></a>  
       </footer>
-     <!--  <script src="data.js" type="module"></script> -->
     </div>
     <script src="main.js" type="module"></script>
   </body>
